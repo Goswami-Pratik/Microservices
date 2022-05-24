@@ -10,8 +10,9 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>customer</module>
-      <module>fraud</module>
+    <module>fraud</module>
     <module>eureka-server</module>
+    <module>clients</module>
   </modules>
 
   <name>microservices</name>
@@ -55,6 +56,10 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <version>${spring.boot.starter.test.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-openfeign</artifactId>
     </dependency>
   </dependencies>
 

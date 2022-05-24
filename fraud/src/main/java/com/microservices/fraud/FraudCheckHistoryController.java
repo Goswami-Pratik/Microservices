@@ -1,5 +1,6 @@
 package com.microservices.fraud;
 
+import com.microservices.clients.fraud.FraudCheckResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
