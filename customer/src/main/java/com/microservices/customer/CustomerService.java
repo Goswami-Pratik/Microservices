@@ -2,6 +2,8 @@ package com.microservices.customer;
 
 import com.microservices.clients.fraud.FraudCheckResponse;
 import com.microservices.clients.fraud.FraudClient;
+import com.microservices.clients.notification.NotificationClient;
+import com.microservices.clients.notification.NotificationRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,7 @@ import org.springframework.stereotype.Service;
 public class CustomerService {
 
     private final CustomerRepository customerRepository;
+    private final NotificationClient notificationClient;
     private final FraudClient fraudClient;
 
     public void registerCustomer(CustomerRegistrationRequest request) {
@@ -33,6 +36,15 @@ public class CustomerService {
         if (fraudCheckResponse.isFraudster()) {
             throw new IllegalStateException("Fraudster Detected");
         }
-        // todo: send notification
+
+        // todo: make it async (add queue)
+        notificationClient.sendNotification(
+                new NotificationRequest(
+                        customer.getId(),
+                        customer.getEmail(),
+                        String.format("Hi %s, welcome to Microservices Code...",
+                                customer.getFirstName())
+                )
+        );
     }
 }
