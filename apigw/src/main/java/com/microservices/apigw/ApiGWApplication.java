@@ -1,4 +1,4 @@
-package com.microservices.notification;
+package com.microservices.apigw;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,6 +6,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
 @SpringBootApplication
-public class NotificationApplication {
-    public static void main(String[] args) {SpringApplication.run(NotificationApplication.class, args);}
+public class ApiGWApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ApiGWApplication.class, args);
+    }
 }
