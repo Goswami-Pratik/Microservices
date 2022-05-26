@@ -1,0 +1,4 @@
+com\microservices\clients\fraud\FraudCheckResponse.class
+com\microservices\clients\notification\NotificationClient.class
+com\microservices\clients\fraud\FraudClient.class
+com\microservices\clients\notification\NotificationRequest.class
