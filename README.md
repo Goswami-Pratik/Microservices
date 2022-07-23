@@ -20,10 +20,6 @@ Microservices architectures make applications easier to scale and faster to deve
 
  ![Architecture](/architecture.png)
 
-## Author
-
-- [@Goswami-Pratik](https://github.com/Goswami-Pratik/)
-
 ## Feedback 😊
 
 If you have any feedback, please reach out to me at pratikdgoswami@gmail.com
