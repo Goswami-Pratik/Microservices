@@ -1,6 +1,6 @@
 # Microservices
 
-Microservices is an architectural and organisational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are owned by small, self-contained teams. The microservice project integrates service discovery, load balancers in a containerised manner.
+Microservices are an architectural and organisational approach to software development where software is composed of small independent services that communicate over well-defined APIs. These services are owned by small, self-contained teams. The microservice project integrates service discovery, load balancers in a containerised manner.
 
 Microservices architectures make applications easier to scale and faster to develop, enabling innovation and accelerating time-to-market for new features.
 
